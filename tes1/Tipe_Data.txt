@@ -1,0 +1,22 @@
+//perbedaan tipe data integer dan float
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+	int a, b, tot;
+	float x, y, jum;
+	
+//integer
+	printf("Masukkan Bil A : \n");
+		scanf("%d", &a);
+		scanf("%f", &x);
+	printf("Masukkan Bil B : \n");
+		scanf("%d", &b);
+		scanf("%f", &y);
+	tot=a+b;
+	jum=x+y;
+	
+	printf("%d %f", tot, jum);
+
+}
