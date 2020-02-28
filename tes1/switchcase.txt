@@ -1,0 +1,72 @@
+//kalkulator sederhana switch case
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(ulang)
+{
+	int a, b, hasil, n;
+	printf("Switch Case Sederhana \n");
+	printf("1. Perkalian \n");
+	printf("2. Penjumlahan \n");
+	printf("3. Pengurangan \n");
+	printf("4. Pembagian \n");
+	printf("Masukkan pilihan anda : ");
+		scanf("%d", &n);
+	switch(n)
+	{
+		case 1:
+			{	
+				printf("Perkalian");
+				printf("\n====================");
+				printf("\nMasukkan angka A : ");
+					scanf("%d", &a);
+				printf("\nMasukkan angka B : ");
+					scanf("%d", &b);
+				hasil=a*b;
+				printf("\nHasilnya : %d", hasil);
+				break;
+			}
+			
+		case 2:
+			{	
+				printf("Penjumlahan");
+				printf("\n====================");
+				printf("\nMasukkan angka A : ");
+					scanf("%d", &a);
+				printf("\nMasukkan angka B : ");
+					scanf("%d", &b);
+				hasil=a+b;
+				printf("\nHasilnya : %d", hasil);
+				break;
+			}
+		case 3:
+			{	
+				printf("Pengurangan");
+				printf("\n====================");
+				printf("\nMasukkan angka A : ");
+					scanf("%d", &a);
+				printf("\nMasukkan angka B : ");
+					scanf("%d", &b);
+				hasil=a-b;
+				printf("\nHasilnya : %d", hasil);
+				break;
+			}
+		case 4:
+			{	
+			float x, y;
+				printf("Pembagian");
+				printf("\n====================");
+				printf("\nMasukkan angka A : ");
+					scanf("%f", &x);
+				printf("\nMasukkan angka B : ");
+					scanf("%f", &y);
+				float hasil=x/y;
+				printf("\nHasilnya : %.2f", hasil);
+				break;
+			}
+		default:
+			printf("Input Salah!!!");
+			break;			
+	}	
+	
+}
